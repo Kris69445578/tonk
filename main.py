@@ -28,7 +28,7 @@ DAILY_TP_TARGET = 1000.00
 EMAIL_ENABLED = True
 EMAIL_SENDER   = "derivupdatesbytony@gmail.com"
 EMAIL_PASSWORD = "lhrg xjad medc hsib"
-EMAIL_RECEIVER = "wamitiantony297@gmail.com"
+EMAIL_RECEIVER = "jahimvj1@gmail.com"
 SMTP_SERVER    = "smtp.gmail.com"
 SMTP_PORT      = 587
 
@@ -916,9 +916,9 @@ def find_valid_digit_odd_positions(vol):
     if len(seq) < 1000:
         return None
 
-    d1, d2, d3, d4, d5, d6, d7, d8 = seq[-1], seq[-10], seq[-11], seq[-100], seq[-101], seq[-110], seq[-111], seq[-1000]
+    d1, d2, d3, d4, d5, d6, d7, d8 = seq[-1], seq[-2], seq[-11], seq[-100], seq[-101], seq[-110], seq[-111], seq[-1000]
 
-    if not (d1 == d2 == d3 == d4):
+    if not (d1 == d2 == d4 == d5):
         return None
 
     candidate = d1
